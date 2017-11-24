@@ -1,0 +1,190 @@
+body{
+    background-color:lightcyan;
+}
+header{
+    width:100%;
+    height:40px;
+    background-color:navy;
+    color:white;
+    font-size:30px;
+}
+.logo_img{
+    margin-left:20px;
+    border:2px solid black;
+    width:150px;
+    height:130px;
+}
+.logo{
+    color:dodgerblue;
+    font-size:50px;
+    margin-top:10px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-weight: bolder;
+}
+footer{
+ margin-top:60px;
+ background-color:lightblue;
+ width:100%;
+ height:100% !important;
+}
+.logo_footer{
+    color:dodgerblue;
+    font-size:35px;
+    margin-top:10px;
+    margin-left:50px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-weight: bolder; 
+}
+.head_footer{
+    margin-left:5px;
+    font-size:20px;
+}
+.link:hover{
+    color:brown;
+}
+.tweet:hover{
+    color:lightblue;
+}
+.fb:hover{
+    color:navy;
+}
+.gp:hover{
+    color:red;
+}
+.vm:hover{
+   color:lightblue;
+}
+.fc:hover{
+    color:orange;
+}
+.list{
+    color:navy;
+    font-weight:bold;
+    cursor: pointer;
+}
+.mail{
+    margin-left:10px;
+    font-size:20px;
+    color:red;
+}
+/* For shopping.html */
+.card_form{
+    margin-left:170px;
+    width:75%;
+    height:100%
+}
+.margins{
+    margin-top:15px;
+}
+.form_width{
+    width:95%;
+}
+.intro{
+    margin-top:40px;
+    color:navy;
+    font-size:35px;
+}
+.card_info{
+    margin-top:20px;
+    margin-left:270px;
+    width:60%;
+    font-size:25px;
+    color:navy;
+    color:navy;
+    margin-bottom:15px;
+}
+.book_list{
+    margin-left:30px;
+    margin-bottom:10px;
+}
+.image_nail{
+    margin-top:15px;
+}
+.icon{
+    width:32px;
+    height:32px;
+}
+.cards{
+    margin-top:30px;
+    margin-left:10px;
+    width:92%;
+}
+.card_about{
+    margin-top:20px;
+    margin-left:100px;
+    width:86%;
+    font-size:25px;
+    color:navy;
+    margin-bottom:15px;
+}
+.head{
+    margin-left:310px;
+}
+.card_books{
+    margin-left:30px;
+    width:60%;
+}
+.icons_product{
+    margin-top:20px;
+    margin-bottom:5px;
+}
+.product_detail{
+    color:navy;
+}
+.detail{
+    margin-left:30px;
+}
+.btn{
+    margin-bottom:20px;
+}
+.kart{
+    margin-top:20px;
+    color:navy;
+}
+.card-kart{
+    margin-top:20px;
+    margin-left:15px;
+    width:90%;
+    font-size:20px;
+    color:navy;
+}
+.items{
+    color:blue;
+    margin-top:14px;
+    text-decoration: underline;
+}
+.card_payment{
+    margin-left:250px;
+    width:60%;
+}
+#pay{
+    margin-top:20px;
+    margin-bottom:5px;
+    color:navy;
+    font-size:25px;
+}
+.payment{
+    margin-top:25px
+    text-align:center;
+    color:navy;
+    font-size:20px;
+}
+.btn{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+#payment{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+.area{
+    margin-left:50px;
+    width:80%;
+    margin-top:40px;
+}
+.shop{
+    margin-left:250px;
+}
+.home{
+    margin-left:200px;
+}

@@ -1,0 +1,249 @@
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/w3css.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/kart.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+</head>
+<script type = 'text/javascript' src = "assets/js/kart.js"></script>
+<body ng-app = 'myApp' ng-controller = 'shoppingController'>
+    <div class ='row'>
+        <div class = 'col-lg-9 col-md-9 col-sm-12 col-xs-12'>
+            <h3 class = 'text-center'>Choose from the following options
+                <select ng-model="shoppingOptions" ng-options="x for x in options"></select>
+            </h3>
+            <section class = 'text-left ' ng-switch = 'shoppingOptions'>
+            <div accesskey=""  ng-switch-when="Books in the Store">
+            <h1 class = 'head'>Books in the Store</h1>
+            <div style = 'margin-left:60px;width:85%;'>
+                <div class = 'row'>
+                  <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center'>
+                      <div class = 'w3-card-4 card_books w3-white'>
+                         <img src = 'assets/images/mystery.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h2 class = 'text-center'>Murder on the Orient Expres</h2>
+                              <h4 class = 'text-left detail'>Author: Agatha Christie</h4>
+                              <h4 class = 'text-left detail'>Genre: Crime/Mystery</h4>
+                              <h3 class = 'text-center'>Price: Rs.150 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '1'>Add to Cart</button>
+                          </section>
+                      </div>
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/romantic.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h2 class = 'text-center'>Me Before You</h2>
+                              <h4 class = 'text-left detail'>Author: Jojo Moyes</h4>
+                              <h4 class = 'text-left detail'>Genre: Romantic</h4>
+                              <h3 class = 'text-center'>Price: Rs.190 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '2'>Add to Cart</button>
+                          </section>
+                      </div> 
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/scifi.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h2 class = 'text-center'>The Time Machine</h2>
+                              <h4 class = 'text-left detail'>Author: HG Wells </h4>
+                              <h4 class = 'text-left detail'>Genre: Science Fiction</h4>
+                              <h3 class = 'text-center'>Price: Rs.120 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '3'>Add to Cart</button>
+                          </section>
+                      </div>
+                  </div>
+                  <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center'>
+                      <div class = 'w3-card-4 card_books w3-white'>
+                         <img src = 'assets/images/horror.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h2 class = 'text-center'>The Girl From the Well</h2>
+                              <h4 class = 'text-left detail'>Author: Rin Chupico</h4>
+                              <h4 class = 'text-left detail'>Genre: Horror</h4>
+                              <h3 class = 'text-center'>Price: Rs.190 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '4'>Add to Cart</button>
+                          </section>
+                      </div> 
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/crime2.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h2 class = 'text-center'>Death on the Nile</h2>
+                              <h4 class = 'text-left detail'>Author: Agatha Christie</h4>
+                              <h4 class = 'text-left detail'>Genre: Crime/Mystery</h4>
+                              <h3 class = 'text-center'>Price: Rs.150 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '5'>Add to Cart</button>
+                          </section>
+                      </div>
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/crime.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h2 class = 'text-center'>Rebecca</h2>
+                              <h4 class = 'text-left detail'>Author: Daphne Du Maurier</h4>
+                              <h4 class = 'text-left detail'>Genre: Crime/Mystery</h4>
+                              <h3 class = 'text-center'>Price: Rs.110 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '6'>Add to Cart</button>
+                          </section>
+                      </div>                   
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div accesskey=""  ng-switch-when="Gadgets in the Store">
+            <h1 class = 'head'>Gadgets in the Store</h1>
+            <div style = 'margin-left:60px;width:85%;'>
+                <div class = 'row'>
+                  <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center'>
+                      <div class = 'w3-card-4 card_books w3-white'>
+                         <img src = 'assets/images/laptop.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>HP 15-AY115TX Intel Core i7</h3>
+                              <h4 class = 'text-left detail'>Company : HP</h4>
+                              <h4 class = 'text-left detail'>Type : Laptop</h4>
+                              <h3 class = 'text-center'>Price: Rs.48,300 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '7'>Add to Cart</button>
+                          </section>
+                      </div>
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/tablet.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>HP Stream 7 32 GB Windows</h3>
+                              <h4 class = 'text-left detail'>Company: HP</h4>
+                              <h4 class = 'text-left detail'>Type : Tablet</h4>
+                              <h3 class = 'text-center'>Price: Rs.23,600 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)'id = '8'>Add to Cart</button>
+                          </section>
+                      </div> 
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/mobile.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>Samsung Galaxy J7 Max</h3>
+                              <h4 class = 'text-left detail'>Company: Samsung</h4>
+                              <h4 class = 'text-left detail'>Type : Smart Phones</h4>
+                              <h3 class = 'text-center'>Price: Rs.17,800 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '9'>Add to Cart</button>
+                          </section>
+                      </div>
+                  </div>
+                  <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center'>
+                      <div class = 'w3-card-4 card_books w3-white'>
+                         <img src = 'assets/images/headphones.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>Plantronic Back Beat Pro</h3>
+                              <h4 class = 'text-left detail'>Company: Plantronic</h4>
+                              <h4 class = 'text-left detail'>Type : Headphone</h4>
+                              <h3 class = 'text-center'>Price: Rs.11,490 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '10'>Add to Cart</button>
+                          </section>
+                      </div> 
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/dell_laptop.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>Dell Inspiron 15 3567 i5 </h3>
+                              <h4 class = 'text-left detail'>Company: Dell</h4>
+                              <h4 class = 'text-left detail'>Type : Laptop</h4>
+                              <h3 class = 'text-center'>Price: Rs.42,500 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '11'>Add to Cart</button>
+                          </section>
+                      </div>
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/vivo.jpeg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>Vivo V5 S</h3>
+                              <h4 class = 'text-left detail'>Company: Vivo</h4>
+                              <h4 class = 'text-left detail'>Type : Smart Phones</h4>
+                              <h3 class = 'text-center'>Price: Rs.17,000 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '12'>Add to Cart</button>
+                          </section>
+                      </div>                   
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div accesskey=""  ng-switch-when="Clothings in the Store">
+            <h1 class = 'head'>Clothes in the Store</h1>
+            <div style = 'margin-left:60px;width:85%;'>
+                <div class = 'row'>
+                  <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center'>
+                    <div class = 'w3-card-4 card_books w3-white' >
+                         <img src = 'assets/images/dress.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>One Piece Dress</h3>
+                              <h4 class = 'text-left detail'>Brand: Carrell</h4>
+                              <h3 class = 'text-center'>Price: Rs.15000 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '13'>Add to Cart</button>
+                          </section>
+                      </div>
+                     <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/coat.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>Men's Coat</h3>
+                              <h4 class = 'text-left detail'>Brand: Souland</h4>
+                              <h3 class = 'text-center'>Price: Rs.190 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '14'>Add to Cart</button>
+                          </section>
+                      </div> 
+                       <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/jacket.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>Woman Solid Parka Jacket</h3>
+                              <h4 class = 'text-left detail'>Brand: Fort Collins</h4>
+                              <h3 class = 'text-center'>Price: Rs.1599 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '15'>Add to Cart</button>
+                          </section>
+                      </div>
+                  </div>
+                  <div class = 'col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center'>
+                      <div class = 'w3-card-4 card_books w3-white'>
+                         <img src = 'assets/images/shirt.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                              <h3 class = 'text-center'>Shirt for Men</h3>
+                              <h4 class = 'text-left detail'>Brand: HighLander</h4>
+                              <h3 class = 'text-center'>Price: Rs.700 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '16'>Add to Cart</button>
+                          </section>
+                      </div> 
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/kurtis.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>Woman Kurtis </h3>
+                              <h4 class = 'text-left detail'>Brand: Kaushalik</h4>
+                              <h3 class = 'text-center'>Price: Rs.650 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '17'>Add to Cart</button>
+                          </section>
+                      </div>
+                      <div class = 'w3-card-4 card_books w3-white' style = 'margin-top:40px;'>
+                         <img src = 'assets/images/jeans.jpg' class = 'img-thumbnail icons_product'>
+                          <section class = 'product_detail'>
+                             <h3 class = 'text-center'>A Pair of Jeans for Men</h3>
+                              <h4 class = 'text-left detail'>Brand:levis </h4>
+                              <h3 class = 'text-center'>Price: Rs.1600 </h3>
+                              <button class = 'text-center btn btn-lg btn-info products' ng-click = 'addItem(this.id)' id = '18'>Add to Cart</button>
+                          </section>
+                      </div>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+             </section>
+         </div>
+        <div class = 'col-lg-3 col-md-2 col-sm-8  col-xs-8 '>
+         <div class = 'w3-card-4 w3-light-grey cards'>
+           <h2 class = 'text-center kart' id = 'my_kart'>My Kart</h2>
+            <h4>Caution: Once an item is totally removed from the kart you can't add it until the page is refreshed.</h4>
+            <div ng-repeat="x in arr">
+              <div class = 'w3-card-4 card-kart w3-white text-center'>
+                <h3 class = 'text-center items'> Item in the Kart</h3>
+                {{x.name}} <br> By: {{x.company}} <br> Quantity: {{x.quantity}} <br>Price: {{x.price}} <br>
+                  <button class = 'btn btn-sm btn-danger' ng-click = 'removeItem($index)'>Remove the Item</button>
+               </div>
+             </div>
+            <div class = 'text-center'>
+                <div id = 'pay'> Payable amount is {{price_cal()}}</div>
+            </div>
+            <div class = 'text-center' id = 'payment'>
+                  <a href = '#!payment'><button class = 'btn btn-info btn-lg '>Place Order</button></a>
+             </div>
+         </div>
+        </div>
+      </div>
+    
+<script type = 'text/javascript' src = "assets/js/bootstrap_min.js"></script>
+<script type = 'text/javascript' src = "assets/js/jquery.js"></script>
+</body>

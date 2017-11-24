@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" type="text/css" href="assets/css/w3css.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/kart.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<title>Shopping Kart</title>
+</head>
+<body ng-app = 'myApp'>
+    <header class = 'text-center'>Online Shopping Kart</header>
+    <section class = 'logo'>
+     <img src = 'assets/images/shopping.jpg' class = 'img-circle logo_img'>
+     <span class = "text-left logo">SHOPPINGGG!!!</span>
+    </section>
+    <ng-view></ng-view>
+    
+    <footer>
+        <article class = 'row' id = 'contact'>
+            <section class = 'col-lg-4 col-md-4 col-sm-8 col-xs-8'>
+                <div class = 'logo_footer'>SHOPPINGGG!!!</div>
+            </section>
+            <section class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                <div style = 'margin-top:10px'>
+                    <span class = 'head_footer'>Contact Us
+                        <button><i class="fa fa-linkedin-square link"></i></button>
+                        <button><i class="fa fa-twitter-square tweet"></i></button>
+                        <button><i class="fa fa-facebook-official fb"></i></button>
+                        <button><i class="fa fa-google-plus-official gp"></i></button>
+                        <button><i class="fa fa-vimeo-square vm"></i></button>
+                        <button><i class="fa fa-flickr fc"></i></button>
+                    </span>
+                </div>     
+             </section>
+            <section class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                <div style = 'margin-top:10px'>
+                <span class = 'head_footer'>Call Us at 
+                    <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-phone"></span> Phone</button> 0132-1243-5634
+                </span>
+            </div>
+        </section>
+        </article>
+        <article class = 'row'>
+            <section class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>About Shopping </h3>
+                <ul class = 'list'>
+                    <li>New on Shoppinggg!!!</li>
+                    <li>Latest Discounts</li>
+                    <li>Family Package  Discounts</li>
+                    <li>Buy 2 Get 1 Free deals </li>
+                    <li>Special Coupons</li>
+                </ul>
+            </section>
+            <section class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Discover</h3>
+                <ul class = 'list'>
+                    <li>New Eectronics</li>
+                    <li>Furniture and Housing </li>
+                    <li>Kitchen Ware</li>
+                    <li>Movies and Music</li>
+                    <li>Books and More</li>
+                    <li>Jwellery and Gems</li>
+                </ul>
+            </section>
+            <section class = 'col-lg-4 col-md-4 col-sm-10 col-xs-10'>
+                <h3 class = 'head_footer' style = 'margin-left:40px;font-weight:bolder'>Mail Us At:</h3>
+                <button class="btn btn-default btn-lg" style = 'margin-left:40px'><span class="glyphicon glyphicon-envelope"></span></button><span class = 'mail'>shoppinggg@gmail.com</span>
+            </section>
+        </article>
+</footer>
+<script type = 'text/javascript' src = "assets/js/bootstrap_min.js"></script>
+<script type = 'text/javascript' src = "assets/js/jquery.js"></script>
+<script type = 'text/javascript' src = "assets/js/kart.js"></script>
+</body>
+</html>

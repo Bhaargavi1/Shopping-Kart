@@ -1,0 +1,141 @@
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/w3css.css">
+<link rel="stylesheet" href="assets/css/bootstrap.css">
+<link rel="stylesheet" href="assets/css/kart.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+</head>
+<body ng-app = 'myApp' ng-controller = 'appController'>
+ <h2 class = 'text-center'>Please Fill Your Details Here</h2>
+    <section class = 'w3-card-4 card_form w3-light-grey'>
+        <form class="form-horizontal" name = 'myForm' style = 'margin-bottom: 20px;'>
+            <div class="form-group">
+              <label class="control-label col-sm-2 col-xs-2 margins" >First Name:</label>
+              <div class="col-sm-10 col-xs-10">
+              <input type="text" class="form-control margins form_width" name = 'fname' ng-model = 'firstname' placeholder="Enter First Name" required>
+                  <div style ='color:red' ng-show = 'myForm.fname.$error.required'>First Name required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2 col-xs-2 margins"  >Last Name:</label>
+              <div class="col-sm-10 col-xs-10">
+              <input type="text" class="form-control margins form_width" name = 'lname' ng-model = 'lastname' placeholder="Enter Last Name" required>
+                  <div style ='color:red' ng-show = 'myForm.lname.$error.required'>Last Name required</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2 col-xs-2 margins">Gender:</label>
+              <div class="col-sm-10 col-xs-10" style = 'margin-top:15px;'>
+                    <label class="radio-inline">
+                        <input type="radio" name="m">Male
+                  </label>
+                  <label class="radio-inline">
+                        <input type="radio" name="f">Female
+                 </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2 col-xs-2 margins">Email:</label>
+              <div class="col-sm-10 col-xs-10">
+              <input type="email" class="form-control margins form_width" name = 'myEmail' placeholder="Enter Email id" ng-model = 'myEmailid' required>
+                  <div ng-show="myForm.myEmail.$error.email">Invalid Email</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2 col-xs-2 margins">Date of Birth:</label>
+              <div class="col-sm-10 col-xs-10">
+              <input type="date" class="form-control margins form_width" name = 'date'>
+              </div>
+            </div>
+        </form>
+    </section>
+    <section class = 'intro'>
+    <div class = 'text-center'>Hai {{firstname + ' ' + lastname}}</div>
+      <h2 class = 'text-center'>This is a small shopping cart and it contains these items</h2>
+         <div class = 'w3-card-4 card_info w3-white text-center'> Genre of Books Available in the kart
+            <div class = 'row'>
+                <div class = 'col-lg-7 col-md-7 col-sm-10 col-xs-12'>
+                   <div class = 'row book_list text-left'>
+                   Mystery<img src = 'assets/images/mystery.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                    Crime/Thriller<img src = 'assets/images/crime.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                   Romantic<img src = 'assets/images/love.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                  Science Fiction<img src = 'assets/images/scifi.png' class = 'icon'>
+                  </div>
+                   <div class = 'row book_list text-left'>
+                 Horror<img src = 'assets/images/ghost.png' class = 'icon'>
+                </div>
+                </div>
+                <div class = 'col-lg-5 col-md-5 col-sm-10 col-xs-12'>
+                   <div class = 'text-center image_nail '>
+                       <img src = 'assets/images/books.jpg' class = 'img-thumbnail'>
+                    </div>
+                </div>
+            </div>
+          </div>
+         <div class = 'w3-card-4 card_info w3-white text-center'>Available Gadgets in the Kart
+            <div class = 'row'>
+                <div class = 'col-lg-7 col-md-7 col-sm-10 col-xs-12'>
+                   <div class = 'row book_list text-left'>
+                   Laptops<img src = 'assets/images/laptop.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                    Mobiles<img src = 'assets/images/mobile.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                   Tablets<img src = 'assets/images/tablets.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                  HeadPhones<img src = 'assets/images/headphones.png' class = 'icon'>
+                  </div>
+                   <div class = 'row book_list text-left'>
+                 MacBook<img src = 'assets/images/macbook.png' class = 'icon'>
+                </div>
+                </div>
+                <div class = 'col-lg-5 col-md-5 col-sm-10 col-xs-12'>
+                   <div class = 'text-center image_nail '>
+                       <img src = 'assets/images/gadgets.jpg' class = 'img-thumbnail'>
+                    </div>
+                </div>
+            </div>
+          </div>
+         <div class = 'w3-card-4 card_info w3-white text-center'>Clothing Types in the Cart
+            <div class = 'row'>
+                <div class = 'col-lg-7 col-md-7 col-sm-10 col-xs-12'>
+                   <div class = 'row book_list text-left'>
+                   Jackets<img src = 'assets/images/jacket.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                    Coats<img src = 'assets/images/coat.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                   Pair of Jeans<img src = 'assets/images/jeans.png' class = 'icon'>
+                </div>
+                   <div class = 'row book_list text-left'>
+                   Skirts <img src = 'assets/images/skirt.png' class = 'icon'>
+                  </div>
+                   <div class = 'row book_list text-left'>
+                  T-Shirts<img src = 'assets/images/tshirt.png' class = 'icon'>
+                </div>
+                </div>
+                <div class = 'col-lg-5 col-md-5 col-sm-10 col-xs-12'>
+                   <div class = 'text-center image_nail '>
+                       <img src = 'assets/images/clothes.jpg' class = 'img-thumbnail'>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+    <div class = 'text-center'>
+        <a href = '#!shopping'><button class = 'btn btn-primary btn-lg ' ng-disabled = "myForm.fname.$invalid || myForm.lname.$invalid || myForm.myEmail.$invalid" >Proceed to Shopping Kart</button></a>
+    </div>
+<script type = 'text/javascript' src = "assets/js/bootstrap_min.js"></script>
+<script type = 'text/javascript' src = "assets/js/jquery.js"></script>
+<script type = 'text/javascript' src = "assets/js/kart.js"></script>
+</body>
